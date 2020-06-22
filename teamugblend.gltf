@@ -1,0 +1,237 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.2.75",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0,
+                1,
+                2,
+                3
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "name" : "Light",
+            "rotation" : [
+                0.16907575726509094,
+                0.7558803558349609,
+                -0.27217137813568115,
+                0.570947527885437
+            ],
+            "translation" : [
+                2.535688877105713,
+                4.353756427764893,
+                -0.5898338556289673
+            ]
+        },
+        {
+            "name" : "Camera",
+            "rotation" : [
+                0.24461492896080017,
+                0.621086061000824,
+                -0.20982025563716888,
+                0.7144166231155396
+            ],
+            "translation" : [
+                6.912300109863281,
+                10.326793670654297,
+                0.5462840795516968
+            ]
+        },
+        {
+            "mesh" : 0,
+            "name" : "tea mug",
+            "rotation" : [
+                0,
+                -0.3077133893966675,
+                0,
+                0.9514790773391724
+            ],
+            "translation" : [
+                0,
+                1.1929947137832642,
+                0
+            ]
+        },
+        {
+            "mesh" : 1,
+            "name" : "Plane",
+            "scale" : [
+                -967.8080444335938,
+                -229.76905822753906,
+                -1087.089599609375
+            ],
+            "translation" : [
+                -1.0542664527893066,
+                0.04861748218536377,
+                0.1203317642211914
+            ]
+        }
+    ],
+    "materials" : [
+        {
+            "doubleSided" : true,
+            "name" : "teamug",
+            "pbrMetallicRoughness" : {}
+        },
+        {
+            "doubleSided" : true,
+            "name" : "Material.001",
+            "pbrMetallicRoughness" : {}
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Cylinder",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "indices" : 3,
+                    "material" : 0
+                }
+            ]
+        },
+        {
+            "name" : "Plane",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 4,
+                        "NORMAL" : 5,
+                        "TEXCOORD_0" : 6
+                    },
+                    "indices" : 7,
+                    "material" : 1
+                }
+            ]
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 34243,
+            "max" : [
+                0.9935953617095947,
+                0.9736323356628418,
+                1.5327030420303345
+            ],
+            "min" : [
+                -0.9935952425003052,
+                -1.0000004768371582,
+                -0.9935953617095947
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 34243,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 34243,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 177984,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5126,
+            "count" : 4,
+            "max" : [
+                1,
+                0,
+                1
+            ],
+            "min" : [
+                -1,
+                0,
+                -1
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 5,
+            "componentType" : 5126,
+            "count" : 4,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 6,
+            "componentType" : 5126,
+            "count" : 4,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 7,
+            "componentType" : 5123,
+            "count" : 6,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 410916,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 410916,
+            "byteOffset" : 410916
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 273944,
+            "byteOffset" : 821832
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 355968,
+            "byteOffset" : 1095776
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 48,
+            "byteOffset" : 1451744
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 48,
+            "byteOffset" : 1451792
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 32,
+            "byteOffset" : 1451840
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 12,
+            "byteOffset" : 1451872
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 1451884,
+            "uri" : "teamugblend.bin"
+        }
+    ]
+}

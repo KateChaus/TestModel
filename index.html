@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset=UTF-8 />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <script src="three.min.js"></script>
+    <script src="GLTFLoader.js"></script>
+    <script src="OrbitControls.js"></script>
+    <script>
+      let scene, camera, renderer;
+      function init() {
+
+scene = new THREE.Scene()
+scene.background = new THREE.Color(0xdddddd)
+
+camera = new THREE.PerspectiveCamera(40, window.innerWidth/window.innerHeight,1,5000)
+camera.rotation.y = 45/180*Math.PI
+camera.position.x = 20
+camera.position.y = 20
+camera.position.z = 20
+
+
+
+hlight = new THREE.AmbientLight(0x404040, 10)
+scene.add(hlight)
+
+directionalLight = new THREE.DirectionalLight(0xffffff, 2)
+directionalLight.position.set(0,1,0)
+directionalLight.castShadow = true
+scene.add(directionalLight)
+
+light = new THREE.PointLight(0xc4c4cc4, 10)
+light.position.set(0, 20, 500)
+scene.add(light)
+
+    light2 = new THREE.PointLight(0xc4c4cc4, 10)
+light.position.set(500, 100, 0)
+scene.add(light2)
+
+light3 = new THREE.PointLight(0xc4c4cc4, 5)
+light.position.set(0, 100, -500)
+scene.add(light3)
+
+light4 = new THREE.PointLight(0xc4c4cc4, 10)
+light.position.set(-5000, 200, 0)
+scene.add(light4)
+
+
+renderer = new THREE.WebGLRenderer({antialias: true})
+renderer.setSize(window.innerWidth, window.innerHeight)
+
+controls = new THREE.OrbitControls(camera, renderer.domElement);
+document.body.appendChild(renderer.domElement)
+
+
+let loader = new THREE.GLTFLoader()
+loader.load('teamugblend.gltf', function(gltf){
+    car = gltf.scene.children[0]
+    car.scale.set(0.5, 0.5, 0.5)
+    scene.add(gltf.scene)
+    animate();
+
+})
+}
+
+function animate() {
+renderer.render(scene,camera);
+requestAnimationFrame(animate);
+}
+init()
+    </script>
+  </body>
+</html>
